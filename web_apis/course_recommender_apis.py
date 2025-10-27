@@ -1,5 +1,11 @@
 from fastapi import FastAPI, HTTPException
-import pyodbc
+import pyodb
+import os
+from dotenvy import load_dotenv
+from pathlib import Path
+#Load environment variables from .env file
+# path - Path(__file__).parent / '.env'
+#load_dotenv(path)
 
 app = FastAPI()
 
